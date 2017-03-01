@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Эдуард Меньщиков](https://up.htmlacademy.ru/adaptive/10/user/225704).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Евсеичев](https://htmlacademy.ru/profile/id310215).
 
 ---
 
