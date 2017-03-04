@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+ 	<header class="page-header">
+			<div class="page-header__logo">
+				<a class="page-header__main-link" href="index.html"><img class="page-header__logo-image" src="css/logo.svg" width="150px" height="150px" alt="Mishka"></a>
+			</div>
+			<nav class="main-nav main-nav-closed">
+				<button class="main-nav__toggle" type="button">Меню</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__items">
+						<li class="main-nav__item main-nav__item-active"><a href="#">Каталог товаров</a></li>
+						<li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+						<li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+						<li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="catalog-main">
+		  <h1 calss="catalog-main__title">Каталог товаров</h1>
+		  <section class="catalog">
+		    <div class="catalog-item">
+		      <img src="css/rabbit.jpg" alt="Зайчик-попрыгайчик" width="150px" height="150px">
+		      <p class="catalog-item__title">Зайчик-попрыгайчик</p>
+		      <p class="catalog-item__parameters">Рост 30 см, вес 200 г</p>
+		      <p class="catalog-item__price">1200 руб.</p>
+		      <a class="catalog-item__cart-icon" href="#modal-window">"картинка корзины"</a>
+		    </div>
+		  </section>
+		  <section class="catalog">
+		    <div class="catalog-item">
+		      <img src="css/small-basket.jpg" alt="Корзинка для белья" width="150px" height="150px">
+		      <p class="catalog-item__title">Корзинка для белья</p>
+		      <p class="catalog-item__parameters">Диаметр 15 см, высота 10 см</p>
+		      <p class="catalog-item__price">690 руб.</p>
+		      <a class="catalog-item__cart-icon" href="#modal-window">"картинка корзины"</a>
+		    </div>
+		  </section>
+		  <section class="catalog">
+		    <div class="catalog-item">
+		      <img src="css/big-basket.jpg" alt="Большая корзинка для игрушек" width="150px" height="150px">
+		      <p class="catalog-item__title">Большая корзинка для игрушек</p>
+		      <p class="catalog-item__parameters">Диаметр 30 см, высота 30 см</p>
+		      <p class="catalog-item__price">1500 руб.</p>
+		      <a class="catalog-item__cart-icon" href="#modal-window">"картинка корзины"</a>
+		    </div>
+		  </section>
+
+		  <section class="production-process">
+        <span class="production-process__icon">"иконка камеры"</span>
+		    <p class="production-process__title">Процесс производства</p>
+		    <section class="production-process__video-preview">
+		      <img class="production-process__preview-image" src="css/preview-image.jpg">
+		      <span class="production-process__play-image">"кнопка play"</span>
+		    </section>
+		    <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+		    <a class="production-process__order" href="#modal-window">СДЕЛАТЬ ЗАКАЗ</a>
+      </section>
+
+		</main>
+
+		<footer class="page-footer">
+      <section class="social">
+        <a class="social_instagram" href="#"><span>ig logo</span></a>
+        <a class="social_facebook" href="#"><span>fb logo</span></a>
+        <a class="social_twitter" href="#"><span>tw logo</span></a>
+      </section>
+      <section class="developers">
+        <p class="developers-title">Разработано</p>
+        <a class="developers_logo" href="#"><span>html-a logo</span></a>
+      </section>
+    </footer>
+
+    <div class="modal-content" id="modal-window">
+    <form class="modal-content__form" action="#" method="get">
+     <p class="modal-conten__title">Добавить в корзину</p>
+      <fieldset class="modal-conten__fieldset">
+        <legend class="modal-conten__legend">Выберите размер:</legend>
+        <input class="modal-content__radio" type="radio" name="size">S
+        <input class="modal-content__radio" type="radio" name="size">M
+        <input class="modal-content__radio" type="radio" name="size">L
+      </fieldset>
+      <button class="modal-content__button" type="submit">Добавить</button>
+    </form>
+    </div>
+
+</body>
+</html>
