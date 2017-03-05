@@ -27,101 +27,103 @@
 		  <h1 class="main-form__slogan">Вязание на заказ</h1>
 		  <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
 		  <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-		  <fieldset class="order-type">
+		  <fieldset class="order-options">
 		    <legend class="order-type__title">Тип</legend>
          <span class="order-type__decor-line"></span>
-          <p class="order_type__option">
+          <div class="order_type__option">
 		        <input class="order-type__input" type="radio" id="accessory" name="type" checked>
 		        <label class="order-type__label" for="accessory">Аксессуар для интерьера</label>
 		        <span class="order-type__radio-indicator"></span>
-		      </p>
-		      <p class="order_type__option">
+		      </div>
+		      <div class="order_type__option">
 		        <input class="order-type__input" type="radio" id="toy" name="type">
 		        <label class="order-type__label" for="toy">Детская игрушка</label>
 		        <span class="order-type__radio-indicator"></span>
-		      </p>
+		      </div>
 		  </fieldset>
 
-		  <fieldset class="order-color">
+		  <fieldset class="order-options">
 		    <legend class="order-color__title">Цвет</legend>
 		    <span class="order-color__decor-line"></span>
-          <p class="order_color__option">
+          <div class="order_color__option">
 		        <input class="order-color__input" type="checkbox" id="white" name="color" checked>
 		        <label class="order-color__label" for="white">Белый</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
-		      <p class="order-color__option">
+		      </div>
+		      <div class="order-color__option">
 		        <input class="order-color__input" type="checkbox" id="gray" name="color" checked>
 		        <label class="order-color__label" for="gray">Серый</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
-		      <p class="order-color__option">
+		      </div>
+		      <div class="order-color__option">
 		        <input class="order-color__input" type="checkbox" id="tiffany" name="color">
 		        <label class="order-color__label" for="tiffany">"Тиффани"</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
-		      <p class="order-color__option">
+		      </div>
+		      <div class="order-color__option">
 		        <input class="order-color__input" type="checkbox" id="black" name="color">
 		        <label class="order-color__label" for="black">Черный</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
-		      <p class="order-color__option">
+		      </div>
+		      <div class="order-color__option">
 		        <input class="order-color__input" type="checkbox" id="pink" name="color">
 		        <label class="order-color__label" for="pink">Розовый</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
-		      <p class="order-color__option">
+		      </div>
+		      <div class="order-color__option">
 		        <input class="order-color__input" type="checkbox" id="orange" name="color">
 		        <label class="order-color__label" for="orange">Оранжевый</label>
 		        <span class="order-color__checkbox-indicator"></span>
-		      </p>
+		      </div>
 		      </fieldset>
 
-		      <p class="customer-info">ФИО</p>
-		      <span class="customer-info__decor-line"></span>
-		      <p class="customer-about">
-		        <label class="customer-about__label" for="first-name">Имя:</label>
-		        <input class="customer-about__input" type="text" id="first-name" placeholder="Введите ваше имя*">
-		      </p>
-		      <p class="customer-about">
-		        <label class="customer-about__label" for="second-name">Фамилия:</label>
-		        <input class="customer-about__input" type="text" id="second-name" placeholder="Укажите фамилию*">
-		      </p>
-		      <p class="customer-about">
-		        <label class="customer-about__label" for="last-name">Отчество:</label>
-		        <input class="customer-about__input" type="text" id="last-name" placeholder="Отчество, если желаете">
-		      </p>
+          <section class="customer-info">
+            <p class="customer-info__title">ФИО</p>
+            <span class="customer-info__decor-line"></span>
+            <div class="customer-info__names">
+              <label class="customer-info__name" for="first-name">Имя:</label>
+              <input class="customer-info__input" type="text" id="first-name" placeholder="Введите ваше имя*">
+            </div>
+            <div class="customer-info__names">
+              <label class="customer-info__name" for="second-name">Фамилия:</label>
+              <input class="customer-info__input" type="text" id="second-name" placeholder="Укажите фамилию*">
+            </div>
+            <div class="customer-info__names">
+              <label class="customer-info__name" for="last-name">Отчество:</label>
+              <input class="customer-info__input" type="text" id="last-name" placeholder="Отчество, если желаете">
+            </div>
 
-		      <p class="customer-phone">
-		        <label class="customer-phone__label" for="tel">ТЕЛ</label>
-		        <input class="customer-phone__input" type="tel" placeholder="+7 XXX XX XX*" id="tel">
-		        <span class="customer-phone__decor-line"></span>
-		      </p>
-		      <p class="customer-email">
-		        <label class="customer-email__label" for="email">E-MAIL</label>
-		        <input class="customer-email__input" type="text" placeholder="Ваш Email*" id="email">
-		        <span class="customer-email__decor-line"></span>
-		      </p>
-		      <p class="customer-additional">
-		        <label class="customer-additional__label" for="textarea">ДОП</label>
-		        <textarea class="customer-additional__text-area" rows="10" cols="10" id="textarea"></textarea>
-		        <span class="customer-email__decor-line"></span>
-		      </p>
-		      <p class="main-form__notation">*Поля обязательные для заполнения</p>
-		      <button class="main-form__button" type="submit" name="send">Отправить заказ</button>
+            <div class="customer-info__contacts">
+              <label class="customer-info__title" for="tel">ТЕЛ</label>
+              <input class="customer-info__input" type="tel" placeholder="+7 XXX XX XX*" id="tel">
+              <span class="customer-info__decor-line"></span>
+            </div>
+            <div class="customer-info__contacts">
+              <label class="customer-info__title" for="email">E-MAIL</label>
+              <input class="customer-info__input" type="text" placeholder="Ваш Email*" id="email">
+              <span class="customer-info__decor-line"></span>
+            </div>
+            <div class="customer-info__contacts">
+              <label class="customer-info__title" for="textarea">ДОП</label>
+              <textarea class="" rows="10" cols="10" id="textarea"></textarea>
+              <span class="customer-info__decor-line"></span>
+            </div>
+            <p class="main-form__notation">*Поля обязательные для заполнения</p>
+		      </section>
+		      <button class="main-button" type="submit" name="send">Отправить заказ</button>
 		  </form>
 		</main>
 
 		<footer class="page-footer">
-      <section class="social">
-        <a class="social_instagram" href="#"><span>ig logo</span></a>
-        <a class="social_facebook" href="#"><span>fb logo</span></a>
-        <a class="social_twitter" href="#"><span>tw logo</span></a>
-      </section>
-      <section class="developers">
-        <p class="developers-title">Разработано</p>
-        <a class="developers_logo" href="#"><span>html-a logo</span></a>
-      </section>
+      <div class="page-footer__social-links">
+        <a class="page-footer__instagram" href="#"><span>ig logo</span></a>
+        <a class="page-footer__facebook" href="#"><span>fb logo</span></a>
+        <a class="page-footer__twitter" href="#"><span>tw logo</span></a>
+      </div>
+      <div class="page-footer__dev-links">
+        <p class="page-footer__title">Разработано</p>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/"><span>html-a logo</span></a>
+      </div>
     </footer>
 </body>
 </html>
