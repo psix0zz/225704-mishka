@@ -27,89 +27,100 @@
 		  <h1 class="main-form__slogan">Вязание на заказ</h1>
 		  <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
 		  <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
 		  <fieldset class="order-options">
-		    <legend class="order-type__title">Тип</legend>
-         <span class="order-type__decor-line"></span>
-          <div class="order_type__option">
-		        <input class="order-type__input" type="radio" id="accessory" name="type" checked>
-		        <label class="order-type__label" for="accessory">Аксессуар для интерьера</label>
-		        <span class="order-type__radio-indicator"></span>
+		    <legend class="order-options__title">Тип</legend>
+         <span class="order-options__decor-line"></span>
+          <div class="order_type__field">
+		        <input class="order-options__input" type="radio" id="accessory" name="type" checked>
+		        <label class="order-options__label" for="accessory">Аксессуар для интерьера</label>
+		        <span class="order-options__radio-indicator"></span>
 		      </div>
-		      <div class="order_type__option">
-		        <input class="order-type__input" type="radio" id="toy" name="type">
-		        <label class="order-type__label" for="toy">Детская игрушка</label>
-		        <span class="order-type__radio-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="radio" id="toy" name="type">
+		        <label class="order-options__label" for="toy">Детская игрушка</label>
+		        <span class="order-options__radio-indicator"></span>
 		      </div>
 		  </fieldset>
 
 		  <fieldset class="order-options">
-		    <legend class="order-color__title">Цвет</legend>
-		    <span class="order-color__decor-line"></span>
-          <div class="order_color__option">
-		        <input class="order-color__input" type="checkbox" id="white" name="color" checked>
-		        <label class="order-color__label" for="white">Белый</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		    <legend class="order-options__title">Цвет</legend>
+		    <span class="order-options__decor-line"></span>
+          <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="white" name="color" checked>
+		        <label class="order-options__label" for="white">Белый</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      <div class="order-color__option">
-		        <input class="order-color__input" type="checkbox" id="gray" name="color" checked>
-		        <label class="order-color__label" for="gray">Серый</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="gray" name="color" checked>
+		        <label class="order-options__label" for="gray">Серый</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      <div class="order-color__option">
-		        <input class="order-color__input" type="checkbox" id="tiffany" name="color">
-		        <label class="order-color__label" for="tiffany">"Тиффани"</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="tiffany" name="color">
+		        <label class="order-options__label" for="tiffany">"Тиффани"</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      <div class="order-color__option">
-		        <input class="order-color__input" type="checkbox" id="black" name="color">
-		        <label class="order-color__label" for="black">Черный</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="black" name="color">
+		        <label class="order-options__label" for="black">Черный</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      <div class="order-color__option">
-		        <input class="order-color__input" type="checkbox" id="pink" name="color">
-		        <label class="order-color__label" for="pink">Розовый</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="pink" name="color">
+		        <label class="order-options__label" for="pink">Розовый</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      <div class="order-color__option">
-		        <input class="order-color__input" type="checkbox" id="orange" name="color">
-		        <label class="order-color__label" for="orange">Оранжевый</label>
-		        <span class="order-color__checkbox-indicator"></span>
+		      <div class="order-options__field">
+		        <input class="order-options__input" type="checkbox" id="orange" name="color">
+		        <label class="order-options__label" for="orange">Оранжевый</label>
+		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
 		      </fieldset>
 
-          <section class="customer-info">
-            <p class="customer-info__title">ФИО</p>
-            <span class="customer-info__decor-line"></span>
-            <div class="customer-info__names">
-              <label class="customer-info__name" for="first-name">Имя:</label>
-              <input class="customer-info__input" type="text" id="first-name" placeholder="Введите ваше имя*">
+          <fieldset class="order-options">
+            <p class="order-options__title">ФИО</p>
+            <span class="order-options__decor-line"></span>
+            <div class="order-options__field">
+              <label class="order-options__name" for="first-name">Имя:</label>
+              <input class="order-options__text" type="text" id="first-name" placeholder="Введите ваше имя*">
             </div>
-            <div class="customer-info__names">
-              <label class="customer-info__name" for="second-name">Фамилия:</label>
-              <input class="customer-info__input" type="text" id="second-name" placeholder="Укажите фамилию*">
+            <div class="order-options__field">
+              <label class="order-options__name" for="second-name">Фамилия:</label>
+              <input class="order-options__text" type="text" id="second-name" placeholder="Укажите фамилию*">
             </div>
-            <div class="customer-info__names">
-              <label class="customer-info__name" for="last-name">Отчество:</label>
-              <input class="customer-info__input" type="text" id="last-name" placeholder="Отчество, если желаете">
+            <div class="order-options__field">
+              <label class="order-options__name" for="last-name">Отчество:</label>
+              <input class="order-options__text" type="text" id="last-name" placeholder="Отчество, если желаете">
             </div>
+            </fieldset>
 
-            <div class="customer-info__contacts">
-              <label class="customer-info__title" for="tel">ТЕЛ</label>
-              <input class="customer-info__input" type="tel" placeholder="+7 XXX XX XX*" id="tel">
-              <span class="customer-info__decor-line"></span>
-            </div>
-            <div class="customer-info__contacts">
-              <label class="customer-info__title" for="email">E-MAIL</label>
-              <input class="customer-info__input" type="text" placeholder="Ваш Email*" id="email">
-              <span class="customer-info__decor-line"></span>
-            </div>
-            <div class="customer-info__contacts">
-              <label class="customer-info__title" for="textarea">ДОП</label>
-              <textarea class="" rows="10" cols="10" id="textarea"></textarea>
-              <span class="customer-info__decor-line"></span>
-            </div>
+            <fieldset class="order-options">
+              <div class="order-options__field">
+                <label class="order-options__title" for="tel">ТЕЛ</label>
+                  <div cass="order-options__text">
+                    <input class="order-options__text-input" type="tel" placeholder="+7 XXX XX XX*" id="tel">
+                    <span class="order-options__text-icon"></span>
+                  </div>
+                <span class="order-options__decor-line"></span>
+              </div>
+              <div class="order-options__field">
+                <label class="order-options__title" for="email">E-MAIL</label>
+                  <div cass="order-options__text">
+                    <input class="order-options__text" type="text" placeholder="Ваш Email*" id="email">
+                    <span class="order-options__text-icon "></span>
+                  </div>
+                <span class="order-options__decor-line"></span>
+              </div>
+              <div class="order-options__field">
+                <label class="order-options__title" for="textarea">ДОП</label>
+                <textarea class="order-options__textarea" rows="10" cols="10" id="textarea"></textarea>
+                <span class="order-options__decor-line"></span>
+              </div>
+             </fieldset>
             <p class="main-form__notation">*Поля обязательные для заполнения</p>
-		      </section>
+
+
 		      <button class="main-button" type="submit" name="send">Отправить заказ</button>
 		  </form>
 		</main>
