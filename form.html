@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="page-header">
 			<div class="page-header__logo">
-				<a class="page-header__main-link" href="index.html"><img class="page-header__logo-image" src="css/logo.svg" width="150" height="150" alt="Mishka"></a>
+				<a class="main-link" href="index.html"><img class="page-header__logo-image" src="css/logo.svg" width="90" height="50" alt="Mishka"></a>
 			</div>
 			<nav class="main-nav main-nav-closed">
 				<button class="main-nav__toggle" type="button">Меню</button>
 				<div class="main-nav__wrapper">
 					<ul class="main-nav__items">
 						<li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-						<li class="main-nav__item main-nav__item-active"><a href="#">Вязание на заказ</a></li>
+						<li class="main-nav__item">Вязание на заказ</li>
 						<li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
 						<li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
 					</ul>
@@ -24,14 +25,14 @@
 		</header>
 
 		<main class="main-form">
-		  <h1 class="main-form__slogan">Вязание на заказ</h1>
+		  <h1 class="main-form__title">Вязание на заказ</h1>
 		  <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
-		  <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+		    <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-		  <fieldset class="order-options">
-		    <legend class="order-options__title">Тип</legend>
+		  <section class="order-options">
+		    <p class="order-options__title">ТИП</p>
          <span class="order-options__decor-line"></span>
-          <div class="order_type__field">
+          <div class="order-options__field">
 		        <input class="order-options__input" type="radio" id="accessory" name="type" checked>
 		        <label class="order-options__label" for="accessory">Аксессуар для интерьера</label>
 		        <span class="order-options__radio-indicator"></span>
@@ -41,10 +42,10 @@
 		        <label class="order-options__label" for="toy">Детская игрушка</label>
 		        <span class="order-options__radio-indicator"></span>
 		      </div>
-		  </fieldset>
+		  </section>
 
-		  <fieldset class="order-options">
-		    <legend class="order-options__title">Цвет</legend>
+		  <section class="order-options">
+		    <p class="order-options__title">ЦВЕТ</p>
 		    <span class="order-options__decor-line"></span>
           <div class="order-options__field">
 		        <input class="order-options__input" type="checkbox" id="white" name="color" checked>
@@ -58,7 +59,7 @@
 		      </div>
 		      <div class="order-options__field">
 		        <input class="order-options__input" type="checkbox" id="tiffany" name="color">
-		        <label class="order-options__label" for="tiffany">"Тиффани"</label>
+		        <label class="order-options__label" for="tiffany">«Тиффани»</label>
 		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
 		      <div class="order-options__field">
@@ -76,30 +77,30 @@
 		        <label class="order-options__label" for="orange">Оранжевый</label>
 		        <span class="order-options__checkbox-indicator"></span>
 		      </div>
-		      </fieldset>
+		      </section>
 
-          <fieldset class="order-options">
+          <section class="order-options">
             <p class="order-options__title">ФИО</p>
             <span class="order-options__decor-line"></span>
             <div class="order-options__field">
-              <label class="order-options__name" for="first-name">Имя:</label>
+              <label class="order-options__label" for="first-name">Имя:</label><br>
               <input class="order-options__text" type="text" id="first-name" placeholder="Введите ваше имя*">
             </div>
             <div class="order-options__field">
-              <label class="order-options__name" for="second-name">Фамилия:</label>
+              <label class="order-options__label" for="second-name">Фамилия:</label><br>
               <input class="order-options__text" type="text" id="second-name" placeholder="Укажите фамилию*">
             </div>
             <div class="order-options__field">
-              <label class="order-options__name" for="last-name">Отчество:</label>
+              <label class="order-options__label" for="last-name">Отчество:</label><br>
               <input class="order-options__text" type="text" id="last-name" placeholder="Отчество, если желаете">
             </div>
-            </fieldset>
+            </section>
 
-            <fieldset class="order-options">
+            <section class="order-options">
               <div class="order-options__field">
                 <label class="order-options__title" for="tel">ТЕЛ</label>
                   <div cass="order-options__text">
-                    <input class="order-options__text-input" type="tel" placeholder="+7 XXX XX XX*" id="tel">
+                    <input class="order-options__text" type="tel" placeholder="+7 XXX XX XX*" id="tel">
                     <span class="order-options__text-icon"></span>
                   </div>
                 <span class="order-options__decor-line"></span>
@@ -113,27 +114,26 @@
                 <span class="order-options__decor-line"></span>
               </div>
               <div class="order-options__field">
-                <label class="order-options__title" for="textarea">ДОП</label>
-                <textarea class="order-options__textarea" rows="10" cols="10" id="textarea"></textarea>
+                <label class="order-options__title" for="textarea">ДОП</label><br>
+                <textarea class="order-options__textarea" id="textarea"></textarea>
                 <span class="order-options__decor-line"></span>
               </div>
-             </fieldset>
+             </section>
             <p class="main-form__notation">*Поля обязательные для заполнения</p>
 
-
-		      <button class="main-button" type="submit" name="send">Отправить заказ</button>
+		      <button class="main-button main-button--form" type="submit" name="send">Отправить заказ</button>
 		  </form>
 		</main>
 
 		<footer class="page-footer">
       <div class="page-footer__social-links">
-        <a class="page-footer__instagram" href="#"><span>ig logo</span></a>
-        <a class="page-footer__facebook" href="#"><span>fb logo</span></a>
-        <a class="page-footer__twitter" href="#"><span>tw logo</span></a>
+        <a class="page-footer__instagram" href="#"><span></span></a>
+        <a class="page-footer__facebook" href="#"><span></span></a>
+        <a class="page-footer__twitter" href="#"><span></span></a>
       </div>
       <div class="page-footer__dev-links">
-        <p class="page-footer__title">Разработано</p>
-        <a class="page-footer__logo" href="https://htmlacademy.ru/"><span>html-a logo</span></a>
+        <p class="page-footer__dev">Разработано</p>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/"><img src="" alt="htm-academy" width="30" heidht="30"></a>
       </div>
     </footer>
 </body>
