@@ -10,21 +10,67 @@
   line-height: 30px;
   font-weight: bold;
 
-  margin-top: 36px;
-  margin-bottom: 95px;
+  padding-top: 36px;
+
+  margin: 0;
 }
 
 .about-us__feature {
+  position: relative;
   display: block;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
 
-  margin-top: 0px;
-  margin-bottom: 90px;
+  margin: 0px;
+  padding-top: 90px;
 
   &:last-child {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
+}
+
+.about-us__icon {
+  position: absolute;
+  top: 35px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+}
+
+  .about-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 400px;
+    padding-bottom: 70px;
+  }
+
+  .about-us__feature {
+    width: 250px;
+      &:last-child {
+    padding-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    padding-left: 225px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+}
 }
