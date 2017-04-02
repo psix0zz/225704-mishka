@@ -1,40 +1,138 @@
 .contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
   padding-left: 30px;
   padding-right: 30px;
-
   margin: 0;
 }
 
 .contacts__information {
-  padding-left: 30px;
-  padding-right: 30px;
-
+  display: flex;
+  flex-wrap: wrap;
   font-size: 15px;
   line-height: 30px;
 
-  border-spacing: 0px 30px;
+  color: #444444;
 }
 
-.contacts__left-column {
-  width: 78px;
-  vertical-align: top;
+.contacts__information p {
+  margin: 0;
 }
 
-.contacts__right-column {
-  width: 182px;
-  vertical-align: top;
-
-}
-
-.contacts__right-column--border {
+.contacts__information a {
+  text-decoration: none;
+  color: #444444;
   border-bottom: 1px solid #62d1ba;
 }
 
+.contacts__text-left {
+  width: 77px;
+  padding-bottom: 40px;
+}
+
+.contacts__text-right {
+  width: 180px;
+  padding-bottom: 40px;
+}
+
+.contacts__text-right--adress {
+  width: 155px;
+}
+
+
 .contacts-map {
+  width: 320px;
+  height: 457px;
+
   margin-bottom: 40px;
 }
 
-.main-button {
-  margin-left: 30px;
+.main-button--contacts {
   margin-bottom: 40px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 73px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    padding-left: 50px;
+    padding-bottom: 55px;
+  }
+
+  .contacts__information {
+    font-size: 17px;
+    padding-left: 50px;
+  }
+
+  .contacts__text-left {
+    width: 77px;
+  }
+  .contacts__text-right {
+    width: 258px;
+  }
+  .contacts__text-right--adress {
+    width: 210px;
+    padding-bottom: 60px;
+  }
+
+  .contacts-map {
+    width: 768px;
+    height: 457px;
+  }
+
+  .main-button--contacts {
+    width: 225px;
+
+    margin: auto;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts {
+    position: relative;
+    padding-top: 100px;
+
+  }
+  .contacts-map {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    width: 535px;
+    height: 457px;
+
+    margin-bottom: 0px;
+  }
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 225px;
+    width: 400px;
+  }
+
+  .contacts__title {
+    padding-left: 0px;
+  }
+  .contacts__information {
+    padding-left: 0px;
+  }
+  .main-button--contacts {
+    margin-left: 0px;
+  }
+  .main-button--contacts {
+    margin: 0;
+  }
+
+
 }

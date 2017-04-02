@@ -2,6 +2,7 @@
 @import "global/main-button.less";
 @import "global/modal-content.less";
 
+@import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/intro.less";
 @import "blocks/main-product.less";
@@ -22,7 +23,19 @@
 
 
 body {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    width: 1150px;
+  }
+}
